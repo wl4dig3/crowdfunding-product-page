@@ -43,11 +43,15 @@ h1, h3 {
     right: 20px;
     left: 20px;
     padding: 2rem 3rem;
+    overflow: hidden;
 }
 
 article {
-    background-color: orange;
+    /* background-color: orange; */
+    border-radius: 0.5rem;
+    border: 1px solid;
     padding: 1rem 1rem;
+    margin: 1rem 0;
 }
 
 /* botones stilos  */
@@ -121,20 +125,81 @@ article {
 progress {
     width: 100%;
     margin: 2rem 0;
-    
 }
 
 .about-project {
     text-align: left;
     font-weight: 800;
 }
+
 .text-description p {
     line-height: 1.5;
     text-align: left;
     margin-bottom: 2rem;
 }
-.card, .card-footer {
+
+.card, .card-footer, .card-footer-disable {
     display: flex;
     justify-content: space-between;
 }
-    
+
+/* estilos de la ventana modal  */
+
+.container-modal-1 {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    position: relative;
+}
+
+.modal-title {
+    text-align: left;
+}
+
+.close {
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    color: gray;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.modal .close:hover {
+    font-size: 1.3rem;
+    cursor: grab;
+    color: darkgray;
+}
+
+.card-modal-title {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.left-align {
+    display: flex;
+}
+.left-paragraph {
+    text-align: left;
+    margin-left: 2rem;
+}
