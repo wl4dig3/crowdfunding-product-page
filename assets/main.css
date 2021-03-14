@@ -185,19 +185,41 @@ progress {
     font-weight: 800;
 }
 
-.modal .close:hover {
+ .close:hover {
     font-size: 1.3rem;
     cursor: grab;
     color: darkgray;
 }
+.item-container {
+    border: solid 1px;
+    border-radius: .5rem;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+}
+.item-container2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.l101{
+margin-right: 1rem;
+}
+
 
 .card-modal-title {
     text-align: left;
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .left-align {
     display: flex;
+    
+}
+.left-align-pledge{
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding-right: 3rem; */
 }
 .left-paragraph {
     text-align: left;
